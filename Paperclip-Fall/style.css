@@ -1,0 +1,1014 @@
+﻿/*#############################################################
+Name: Paperclip (Fall)
+Date: 2008-02-01
+Description: The famous Paperclip theme from Community Server.
+Author: Caio Proiete
+URL: http://www.caioproiete.com
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+
+body
+{
+	font-size : 0.8em;
+	font-family : Tahoma, Arial, Helvetica, sans-serif;
+	margin : 0px;
+	padding: 0px;
+	background-color: #5A543A;
+	padding-bottom: 20px;
+}
+
+a:visited, a:active, a:link
+{	
+	color : #E27817;
+}
+
+img
+{
+	border: none;	
+}
+
+/* The masthead sits at the top of the page.*/
+#masthead 
+{
+	margin-top: 8px;
+	background: #ffffff;
+	background-image: url('img/title.jpg');
+	width: 804px;
+	height: 221px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#masthead ul
+{
+	color: #333;
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+
+#masthead ul li
+{
+	display: inline;
+}
+
+#masthead ul li a
+{
+	padding: 0 0.5em;
+	text-decoration: none;
+	margin: 0;
+}
+
+#masthead a:link, #masthead a:visited, #masthead a:active, #masthead a:hover
+{
+	color: #00F;
+	text-decoration: none;
+}
+
+#userArea
+{
+	float: right;
+	margin-top: 16px;
+	padding-right: 6px;
+}
+
+#welcome
+{
+	background-color: #000000;
+	padding: 6px;
+	padding-top: 4px;
+	font-size: .7em;
+	color: #ffffff;
+	margin: 0px;
+	text-align: center;
+}
+
+#welcome a:link, #welcome a:visited, #welcome a:active, #welcome a:hover
+{
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#Search
+{
+	margin-top: 4px;
+	padding-right: 4px;
+}
+
+#Search .searchBox 
+{
+	width: 100px;
+	border: 1px solid #000;
+	font-size: .9em;
+}
+
+.SearchButtonOuter
+{
+	background-image: url('img/search-left.gif');
+	background-position: top left;
+	background-repeat: no-repeat;
+	display: inline-table;
+	display: -moz-inline-box;
+	display: inline-block;
+	font-size: 12px;
+	font-variant: small-caps;
+	text-align: left;
+	padding-left: 4px;
+	font-weight: bold;
+	margin-left: 4px;
+}
+
+.SearchButton
+{
+	background-image: url('img/search-right.gif');
+	background-position: top right;
+	background-repeat: no-repeat;
+	display: inline-table;
+	display: -moz-inline-box;
+	display: inline-block;
+	font-size: 12px;
+	font-variant: small-caps;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 9px;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#Search a:link, #Search a:visited, #Search a:active, #Search a:hover
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#title
+{
+	position: relative;
+	left: 63px;
+	top: 76px;
+	width: 151px;
+	height: 74px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 11px;
+}
+
+#title h1
+{
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: #000000;
+	font-weight: bold;
+}
+
+#title a:link, #title a:visited, #title a:active, #title a:hover
+{
+	color: #000000;
+}
+
+/* The navigation bar.*/
+#nav
+{
+	background-color: #ffffff;
+	padding: 0px 6px 0px 6px;
+	width: 792px;
+	height: 35px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navbar
+{
+	background: #5C5D5F url('img/nav-bg.jpg') repeat-x;
+	height: 35px;
+}
+
+#navbar ul
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navbar li
+{
+	float: left;
+	padding-left: 18px;
+	margin-left: 8px;
+	margin-right: 8px;
+	background-image: url('img/nav-bul.gif');
+	background-repeat: no-repeat;
+	background-position: 4px 13px;
+	padding-top: 9px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#navbar a:link, #navbar a:visited, #navbar a:active
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#navbar a:hover
+{
+	text-decoration: underline;
+}
+
+
+/* The main content.*/
+#content
+{
+	padding: 32px 6px 32px 6px;
+	background-color: #ffffff;
+	width: 792px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* The left menu.*/
+#leftmenu
+{
+	float: left;
+	width : 200px;
+	padding-left: 16px;
+	overflow: hidden;
+}
+
+#leftmenu h3
+{
+	font-size : 1.1em;
+	font-weight: bold;
+	margin : 0px;
+	padding: 0 0 6px 0;
+	border-style: dotted;
+	border-width: 0px;
+	border-bottom-width: 1px;
+	border-bottom-color: #dfdfdf;
+	margin : 0px;	
+	margin-bottom: 6px;
+	
+}
+
+#leftmenu ul
+{
+	list-style : none;
+	font-size : 0.9em;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 20px;
+}
+
+#leftmenu ul li
+{
+	color: #a99238;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+#leftmenu ul li img.rssButton
+{
+	margin-right: 4px;
+}
+
+#leftmenu ul a:link, #leftmenu ul a:visited, #leftmenu ul a:active
+{
+	color: #a99238;
+	text-decoration: none;
+}
+
+#leftmenu ul a:hover
+{
+	color: #a99238;
+	text-decoration: underline;
+}
+
+/* The Tag cloud. */
+#tagcloud
+{
+	font-size: 80%;
+	line-height: 200%;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#tagcloud li
+{
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+#tagcloud a
+{
+	margin-right: 3px;
+	display: inline;
+}
+
+#tagcloud a.biggest
+{
+	margin-right: 6px;
+	color: #8D0000;
+	font-size: 160%;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+#tagcloud a.big
+{
+	margin-right: 6px;
+	color: #9D0A00;
+	font-size: 145%;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+#tagcloud a.medium
+{
+	margin-right: 6px;
+	color: #AD1A00;
+	font-size: 130%;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#tagcloud a.small
+{
+	margin-right: 6px;
+	color: #BD2A01;
+	font-size: 120%;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+#tagcloud a.smallest
+{
+	margin-right: 6px;
+	color: #CD3A11;
+	font-size: 110%;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+/* Search on search */
+#searchonsearch
+{
+	background: white;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	border: 1px solid silver;
+}
+
+#searchonsearch h3
+{
+	margin: 3px;
+	font-size: 13px;
+}
+
+#searchonsearch ol li
+{
+	margin: 2px 0;
+}
+
+/* Search page */
+#searchpage
+{
+	margin-bottom: 30px;
+}
+
+.searchpage h1
+{
+	color: #E27817;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+#searchpage input#q
+{
+	width: 200px;
+}
+
+#searchpage input#comment
+{
+	clear: both;
+}
+
+.searchresult
+{
+	margin-bottom: 20px;
+}
+
+.searchresult a
+{
+	font-weight: bold;
+}
+
+.searchresult span.text
+{
+	clear: both;
+	display: block;
+	margin: 3px 0;
+}
+
+.searchresult span.type
+{
+	display: block;
+}
+
+.searchresult span.url
+{
+	color: Gray;
+}
+
+.searchpage ul.paging
+{
+ list-style-type: none;
+ margin:0px;
+ margin-bottom: 20px;
+ padding:0px;
+}
+
+.searchpage ul.paging li
+{
+ display: inline;
+ border: 1px solid gray; 
+ background: #f1f1f1;
+ margin-right: 5px;
+}
+
+.searchpage ul.paging li a{
+ padding: 5px 8px;
+}
+
+.searchpage ul.paging li.active
+{
+ background: #f1f1f1;
+ border: 1px solid black;
+}
+
+/* Month list */
+ul#monthList
+{
+	font-weight: bold;
+}
+
+ul#monthList ul li
+{
+	margin-left: 20px;
+	font-weight: normal;
+}
+
+ul#monthList li.year
+{
+  cursor: pointer;
+}
+
+ul#monthList ul
+{
+	display: none;
+}
+
+ul#monthList ul.open
+{
+	display: block;
+}
+
+/* The blogroll.*/
+#blogroll ul li img
+{
+	margin-right: 4px;
+}
+
+/* The main area.*/
+#main
+{
+	padding-right: 12px;
+	width: 534px;
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+/* The post */
+#postnavigation{
+	margin-bottom: 10px;
+	text-align: center;
+	color: Gray;
+	background: white;
+	border: none;
+	padding: 3px;
+}
+
+.post
+{
+	margin: 0 0 20px 0;
+}
+
+.posthead
+{
+	border-style: dotted;
+	border-width: 0px;
+	border-bottom-width: 1px;
+	border-color: #dfdfdf;
+	color: #E27817;
+	font-weight: normal;
+	font-size: 1.5em;
+	padding-bottom: 6px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+.posthead a:link, .posthead a:visited, .posthead a:active
+{
+	color: #E27817;
+	text-decoration: none;
+}
+
+.posthead a:hover
+{
+	color: #E27817;
+	text-decoration: underline;
+}
+
+.postfoot 
+{
+	margin-top: 10px;
+	border-style: dotted;
+	border-width: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-color: #dfdfdf;
+	color: #868686;
+	padding-top: 6px;
+	padding-bottom: 6px;	
+}
+
+.postfoot .em
+{
+	color: #000000;
+}
+
+.pageTitle
+{
+	color: #E27817;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+#page h1
+{
+	color: #E27817;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+.title
+{
+	color: #7cc10b;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 16px;
+}
+
+
+/* The Star rater */
+.star-rating
+{
+	position:relative;
+	width:125px;
+	height:25px;
+	overflow:hidden;
+	list-style:none;
+	margin:0;
+	padding:0;
+	background-position: left top;
+}
+
+.star-rating li
+{
+	display: inline;
+}
+
+.star-rating a, .star-rating .current-rating
+{
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-1000em;
+	height:25px;
+	line-height:25px;
+	outline:none;
+	overflow:hidden;
+	border: none;
+}
+
+.star-rating a:hover,
+.star-rating a:active,
+.star-rating a:focus
+{
+	background-position: left bottom;
+}
+
+.star-rating a.one-star
+{
+	width:20%;
+	z-index:6;
+}
+
+.star-rating a.two-stars
+{
+	width:40%;
+	z-index:5;
+}
+
+.star-rating a.three-stars
+{
+	width:60%;
+	z-index:4;
+}
+
+.star-rating a.four-stars
+{
+	width:80%;
+	z-index:3;
+}
+
+.star-rating a.five-stars
+{
+	width:100%;
+	z-index:2;
+}
+
+.star-rating .current-rating
+{
+	z-index:1;
+	background-position: left center;
+}	
+
+/* for an inline rater */
+.inline-rating
+{
+	display:-moz-inline-block;
+	display:-moz-inline-box;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.small-star
+{
+	width:50px;
+	height:10px;
+}
+.small-star,
+.small-star a:hover,
+.small-star a:active,
+.small-star a:focus,
+.small-star .current-rating
+{
+	background-image: url('../../pics/star_small.gif');
+	line-height: 10px;
+	height: 10px;
+}
+
+/* Related Posts */
+#relatedPosts
+{
+	background: white;
+	padding: 5px 10px 10px 10px;
+	border: 1px solid silver;
+}
+
+#relatedPosts h1
+{
+	margin: 0px;
+}
+
+#relatedPosts a
+{
+	display: block;
+	margin-top: 5px;
+}
+
+#relatedPosts span
+{
+	color: #666666;
+	text-indent: 10px;
+	font-size: 10px;
+}
+
+/* comments */
+#comment, #addcomment, #liveprev
+{
+	padding-top: 15px;
+	color: #E27817;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 16px;
+}
+
+.content img
+{
+	height: 80px;
+	width: 80px;
+	float: left;
+	clear: both;
+	margin: 5px 10px 5px 0;
+}
+
+.CommentArea
+{
+	margin: 8px 0px 8px 0px; 
+}
+
+.CommentArea .CommentText3
+{
+	background-image: url('img/comment-background.gif');
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
+.CommentAreaOwner
+{
+	margin: 8px 0px 8px 0px;
+}
+
+.CommentAreaOwner .CommentText3
+{
+	background-color: #f3f3f3;
+}
+
+.author
+{
+	margin-bottom: 6px;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.CommentAreaOwner .author
+{
+	font-weight: bold;
+}
+
+.CommentArrow
+{
+	background-image: url('img/comment-arrow.gif');
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	margin-bottom: -7px;
+}
+
+.CommentText
+{
+	padding-bottom: 3px;
+	background-image: url('img/comment-shadow.gif');
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+.CommentText2
+{
+	border: solid 1px #bcbcbc;
+	padding: 3px;
+}
+
+.CommentText3
+{
+	padding: 10px;
+	font-size: .9em;
+	overflow: hidden;
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.CommentFooter
+{
+	margin-top: 4px;
+	font-size: .7em;
+	color: #999999;
+	padding-left: 16px;
+}
+
+/* Comment Form */
+.commentForm
+{
+	margin-top: 16px;
+	padding: 0 0px 20px 0px;
+}
+
+.commentForm label
+{
+	float: left;
+	display: block;
+	width: 80px;
+	margin-top: 4px;
+}
+
+.commentForm input
+{
+	width: 300px;
+}
+
+.commentForm textarea
+{
+	width: 480px;
+	height: 150px;
+}
+
+.success
+{
+	color: green;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-top: 15px;
+}
+
+.commentForm .bbcode
+{
+	font-size:10px;
+	float:right;
+	position:relative;
+	top: 3px;
+}
+
+#btnSave
+{
+	margin-bottom: 20px;
+}
+
+/* Contact page*/
+#contact
+{
+	background : white;
+	padding: 10px;
+	border: 1px solid silver;
+}
+
+#contact h1
+{
+	color: #E27817;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+#contact label
+{
+	display: block;
+	padding-top: 5px;	
+}
+
+#contact input.field
+{
+	width: 200px;
+}
+
+#contact textarea
+{
+	display: block;	
+	overflow: auto;
+	width: 75%;
+	height: 150px;
+	margin: 0;
+}
+
+/* The Syntax highlighter */
+.code
+{
+	font-size: 12px;
+	color: black;
+	font-family: Consolas, "Courier New", Courier, Monospace;
+	background-color: #F1F1F1;
+	line-height: normal;
+}
+
+.code p
+{
+	padding: 5px;
+}
+
+.code .rem { color: #008000; }
+
+.code .kwrd { color: #0000ff; }
+
+.code .str { color: #006080; }
+
+.code .op { color: #0000c0; }
+
+.code .preproc { color: #0000ff; }
+
+.code .asp { background-color: #ffff00; }
+
+.code .html { color: #800000; }
+
+.code .attr { color: #ff0000; }
+
+.code .alt { background-color: #f4f4f4; }
+
+.code .lnum { color: #606060;}
+
+/* footer */
+.footer
+{
+	color: #fff;
+	padding: 5px 12px;
+	text-align: center;
+}
+
+.footer a
+{
+	text-decoration: none;
+}
+
+/* Archive */
+#archive
+{
+	background-color: white;
+}
+
+#archive h1
+{
+	color: #E27817;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-top: 0px;
+}
+
+#archive h2
+{
+	padding-bottom: 4px;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#archive h2 img
+{
+	margin-right: 3px;
+}
+
+#archive ul
+{
+	list-style-type: square;
+	margin: 20px 10px;
+	padding: 10px;
+}
+
+#archive ul li
+{
+	margin-right: 20px;
+}
+
+#archive table
+{
+	width: 100%;	
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+#archive table td, #archive table th
+{
+	text-align:left;
+}
+
+#archive table td
+{
+	text-align:left;
+	border-bottom: 1px solid #D8D8D8;
+	padding: 2px 0;
+}
+
+#archive .date
+{
+	width: 70px;
+}
+
+#archive .comments
+{
+	width: 70px;
+	text-align: center;
+}
+
+#archive .rating
+{
+	width: 70px;
+	text-align: center;
+}
