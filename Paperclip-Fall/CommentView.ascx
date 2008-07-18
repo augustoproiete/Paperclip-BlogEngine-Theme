@@ -3,11 +3,14 @@
 
 <div id="id_<%=Comment.Id %>" class="CommentArea<%= Post.Author.Equals(Comment.Author, StringComparison.OrdinalIgnoreCase) ? "Owner" : "" %>">
     <p class="author">
-        <%= Comment.Website != null ? "<a title=\"" + Comment.Author + "\" rel=\"nofollow\" href=\"" + Comment.Website + "\">" + Comment.Author + "</a>" : Comment.Author %> <%= Flag %> said: <img class="CommentArrow" src="<%=Utils.RelativeWebRoot %>/themes/<%=BlogSettings.Instance.Theme %>/img/spacer.gif" alt=" " align="bottom" style="border-width:0px;" />
+        <%= Comment.Website != null ? "<a title=\"" + Comment.Author + "\" rel=\"nofollow\" href=\"" + Comment.Website + "\">" + Comment.Author + "</a>" : Comment.Author %> <%= Flag %> said: <img class="CommentArrow" src="<%=Utils.AbsoluteWebRoot %>/themes/<%=BlogSettings.Instance.Theme %>/img/spacer.gif" alt=" " align="bottom" style="border-width:0px;" />
     </p>
     <div class="CommentText">
         <div class="CommentText2">
-            <div class="CommentText3"><p class="content"><%= Gravatar(80)%><%= Text %></p></div>
+            <div class="CommentText3">
+                <p class="gravatar"><%= Gravatar(80)%></p>
+                <p class="content"><%= Text %></p>
+            </div>
         </div>
     </div>
     <div class="CommentFooter">

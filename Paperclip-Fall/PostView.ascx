@@ -17,7 +17,7 @@
             <a rel="nofollow" href="<%=CommentFeed %>"><img src="<%=VirtualPathUtility.ToAbsolute("~/pics/")%>rssButton.gif" alt="RSS comment feed" style="margin-left:3px" /></a> | 
 
 	        <% if (BlogSettings.Instance.EnableRating) {%>
-	        <span class="inline-rating">
+	        <div class="inline-rating">
 	            <ul class="star-rating small-star">
                     <li class="current-rating" style="width:<%=Math.Round((float)(Post.Rating / 5 * 100), 0) %>%">Currently <%=Post.Rating %>/5 Stars.</li>
 		            <li><a href="javascript:void(Rate('<%=Post.Id.ToString() %>', 1))" rev="vote-against" title="Poor" class="one-star">1</a></li>
@@ -26,9 +26,16 @@
 		            <li><a href="javascript:void(Rate('<%=Post.Id.ToString() %>', 4))" rev="vote-for" title="Good" class="four-stars">4</a></li>
 		            <li><a href="javascript:void(Rate('<%=Post.Id.ToString() %>', 5))" rev="vote-for" title="Excellent" class="five-stars">5</a></li>
 	            </ul>
-	        </span>
+	        </div>
             <%}%>
             <div class="em"><span class="em">Filed under:</span> <%=CategoryLinks(" | ") %></div>
+            <div class="em">Tags: <%=TagLinks(", ") %></div>
+            <div class="em">Social Bookmarks:
+              <a rel="nofollow" href="mailto:?subject=<%=Post.Title %>&amp;body=Thought you might like this: <%=Post.AbsoluteLink.ToString() %>">E-mail</a> | 
+              <a rel="nofollow" href="http://www.dotnetkicks.com/submit?url=<%=Server.UrlEncode(Post.AbsoluteLink.ToString()) %>&amp;title=<%=Server.UrlEncode(Post.Title) %>">Kick it!</a> | 
+              <a rel="nofollow" href="http://www.dzone.com/links/add.html?url=<%=Server.UrlEncode(Post.AbsoluteLink.ToString()) %>&amp;title=<%=Server.UrlEncode(Post.Title) %>">DZone it!</a> | 
+              <a rel="nofollow" href="http://del.icio.us/post?url=<%=Server.UrlEncode(Post.AbsoluteLink.ToString()) %>&amp;title=<%=Server.UrlEncode(Post.Title) %>">del.icio.us</a>      
+            </div>
             <% if (Page.User.Identity.IsAuthenticated){ %>
                 <div class="em"><span class="em">Manage post:</span> <%=AdminLinks %> :)</div>
             <%} %>
