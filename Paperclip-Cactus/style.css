@@ -18,6 +18,14 @@ body
 	padding-bottom: 20px;
 }
 
+h1 {
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 13px;
+}
 a:visited, a:active, a:link
 {	
 	color : #006ff7;
@@ -25,7 +33,7 @@ a:visited, a:active, a:link
 
 img
 {
-	border: none;	
+	border: none;
 }
 
 /* The masthead sits at the top of the page.*/
@@ -78,9 +86,8 @@ img
 {
 	background-color: #000000;
 	padding: 6px;
-	padding-top: 4px;
+	padding-top: 5px;
 	font-size: .7em;
-	color: #ffffff;
 	margin: 0px;
 	text-align: center;
 }
@@ -91,7 +98,9 @@ img
 	font-weight: bold;
 	text-decoration: underline;
 }
+.headermaintitle{
 
+}
 #Search
 {
 	margin-top: 4px;
@@ -146,7 +155,6 @@ img
 	color: #ffffff;
 	text-decoration: none;
 }
-
 
 #title
 {
@@ -239,10 +247,14 @@ img
 }
 
 
+/*******************************
+			Left Menu
+********************************/
 /* The left menu.*/
 #leftmenu
 {
 	float: left;
+	font-size : 0.9em;
 	width : 200px;
 	padding-left: 16px;
 	overflow: hidden;
@@ -277,7 +289,6 @@ img
 	color: #7c95b3;
 	margin-top: 6px;
 	margin-bottom: 6px;
-	font-weight: bold;
 }
 
 #leftmenu ul li img.rssButton
@@ -297,72 +308,41 @@ img
 	text-decoration: underline;
 }
 
-/* The Tag cloud. */
-#tagcloud
-{
-	font-size: 80%;
-	line-height: 200%;
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
+/*----------------------------
+Tag cloud
+----------------------------*/
+.tagcloud {
+	margin-bottom: 10px;
+	white-space: normal;
 }
 
-#tagcloud li
-{
-	margin: 0px;
-	padding: 0px;
+.tagcloud li {
 	display: inline;
 }
 
-#tagcloud a
-{
+.tagcloud a {
 	margin-right: 3px;
 	display: inline;
 }
 
-#tagcloud a.biggest
-{
-	margin-right: 6px;
-	color: #001fa7;
-	font-size: 160%;
-	font-weight: 900;
-	text-decoration: none;
+.tagcloud a.biggest {
+	font-size: 19px;
 }
 
-#tagcloud a.big
-{
-	margin-right: 6px;
-	color: #002fb7;
-	font-size: 145%;
-	font-weight: 800;
-	text-decoration: none;
+.tagcloud a.big {
+	font-size: 17px;
 }
 
-#tagcloud a.medium
-{
-	margin-right: 6px;
-	color: #003fc7;
-	font-size: 130%;
-	font-weight: 600;
-	text-decoration: none;
+.tagcloud a.medium {
+	font-size: 14px;
 }
 
-#tagcloud a.small
-{
-	margin-right: 6px;
-	color: #004fd7;
-	font-size: 120%;
-	font-weight: 500;
-	text-decoration: none;
+.tagcloud a.small {
+	font-size: 12px;
 }
 
-#tagcloud a.smallest
-{
-	margin-right: 6px;
-	color: #005fe7;
-	font-size: 110%;
-	font-weight: 300;
-	text-decoration: none;
+.tagcloud a.smallest {
+	font-size: 10px;
 }
 
 /* Search on search */
@@ -466,6 +446,7 @@ img
 /* Month list */
 ul#monthList
 {
+	font-size: 12px;
 	font-weight: bold;
 }
 
@@ -716,6 +697,52 @@ ul#monthList ul.open
 	font-size: 10px;
 }
 
+/****************************
+Comment Menu
+****************************/
+#commentMenu li{
+	float:left;
+	border:1px solid silver;
+	border-bottom: transparent;
+	margin:0;
+	list-style:none;
+	margin-right:5px;
+	padding: 3px 8px;	
+	cursor:pointer;
+	position:relative;
+	top: 2px;
+	background:#d8d8d8;
+}
+
+#commentMenu li.selected{
+	background:white;
+	border-bottom:1px solid white;
+}
+
+#commentPreview{
+	display:none;
+	clear:both;
+	min-height: 150px;
+}
+#commentCompose
+{
+	clear:both;
+	padding: 0px 5px 0px 0px;
+}
+.commentForm .bbcode {
+    font-size:10px;
+    float:right;
+    position:relative;
+    top:20px;
+    padding: 3px;
+}
+
+.bbcode a {
+    margin: 1px;
+    padding: 1px 3px 1px 3px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
 /* comments */
 #comment, #addcomment, #liveprev
 {
@@ -726,14 +753,6 @@ ul#monthList ul.open
 	margin-top: 16px;
 }
 
-.content img
-{
-	height: 80px;
-	width: 80px;
-	float: left;
-	clear: both;
-	margin: 5px 10px 5px 0;
-}
 
 .CommentArea
 {
@@ -768,7 +787,7 @@ ul#monthList ul.open
 	background-repeat: no-repeat;
 	width: 14px;
 	height: 14px;
-	margin-bottom: -7px;
+	margin-bottom: -10px;
 }
 
 .CommentText
@@ -790,7 +809,23 @@ ul#monthList ul.open
 	padding: 10px;
 	font-size: .9em;
 	overflow: hidden;
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.CommentText3 .gravatar {
+	float: left;
+	clear: both;
+	margin: 5px 10px 5px 0;
+}
+
+.CommentText3 .gravatar img {
+	height: 80px;
+	width: 80px;
+}
+
+.CommentText3 .content {
+	min-height: 85px;
+	margin: 5px;
+	margin-left: 90px;
 }
 
 .CommentFooter
@@ -834,13 +869,8 @@ ul#monthList ul.open
 	padding-top: 15px;
 	padding-top: 15px;
 }
-
-.commentForm .bbcode
-{
+#gravatarmsg{
 	font-size:10px;
-	float:right;
-	position:relative;
-	top: 3px;
 }
 
 #btnSave
@@ -894,32 +924,17 @@ ul#monthList ul.open
 	background-color: #F1F1F1;
 	line-height: normal;
 }
-
-.code p
-{
-	padding: 5px;
-}
-
+.code p {padding: 5px;}
 .code .rem { color: #008000; }
-
 .code .kwrd { color: #0000ff; }
-
 .code .str { color: #006080; }
-
 .code .op { color: #0000c0; }
-
 .code .preproc { color: #0000ff; }
-
 .code .asp { background-color: #ffff00; }
-
 .code .html { color: #800000; }
-
 .code .attr { color: #ff0000; }
-
 .code .alt { background-color: #f4f4f4; }
-
 .code .lnum { color: #606060;}
-
 /* footer */
 .footer
 {
@@ -1006,3 +1021,202 @@ ul#monthList ul.open
 	width: 70px;
 	text-align: center;
 }
+/****************************
+			Widgets
+****************************/
+
+div#widgetzone{
+	padding: 0;
+	background: none;
+}
+
+div#widgetzone .clear{
+	clear: left;
+}
+
+div.widget{
+	background: white;
+	border: 0px solid silver;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	z-index: 1;
+	min-width: 1px;
+}
+
+div.widget .content{
+	line-height: 16px;
+	color: #666666;
+}
+
+div.widget h4{
+	font-size: 15px;
+	border-bottom: 1px solid silver;
+	padding-bottom: 5px;
+	margin: 0;
+	margin-bottom: 5px;
+	z-index: 0;
+	color: #000000;
+	letter-spacing: 1px;
+}
+
+div.widget a.edit{
+	font-size: 10px;
+	font-weight: normal;
+	float: right;
+	z-index: 1;
+}
+
+div.widget a.delete{
+	font-weight: bold;
+	color: #999999;
+	float: right;
+	margin-left: 5px;
+	z-index: 1;
+	text-decoration: none;
+}
+
+div.widget a.delete:hover{
+	color: black;
+}
+
+#widgetzone .widget ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
+#widgetzone .widget ul li {
+	margin-bottom: 3px;
+}
+
+#widgetzone div.search{
+	background: none;
+	border: none;
+	padding-left: 10px;
+}
+
+#widgetzone img.rssButton {
+	margin-right: 3px;
+}
+
+/*General Links inside a widget*/
+.widget ul li a{
+	font-size:12px;
+}
+/****************************
+		Category List
+****************************/
+.categorylist
+{
+	font-size:12px;
+	font-weight:bold;
+}
+
+/***************************
+		Administration
+***************************/
+.administration
+{
+	font-size:12px;
+	font-weight:bold;
+}
+
+/*----------------------------
+ Blogroll
+----------------------------*/
+#blogroll ul {
+	list-style-type: none;
+	margin: 0 0 3px 0;
+	padding: 0px;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#blogroll ul li ul li a {
+	margin-left: 25px;
+	color: #666666;
+	font-weight:normal;
+	font-size:10px;
+}
+
+#blogroll ul li a img {
+	border: none;
+	margin-right: 3px;
+}
+
+/*----------------------------
+			Calendar
+----------------------------*/
+#calendarContainer {
+	text-transform: capitalize;
+	margin: 0 auto;
+}
+
+.calendar {
+	border: none;
+	margin: 0 auto;
+}
+
+.calendar .weekend {
+	background-color: #F1F1F1;
+}
+
+.calendar .other {
+	color: silver;
+}
+
+.calendar a.exist {
+	display: block;
+	font-weight: bold;
+	background-color: #F1F1F1;
+}
+
+.calendar td {
+	vertical-align: top;
+	background: white;
+}
+/*----------------------------
+				Recent posts
+----------------------------*/
+
+ul.recentPosts li{
+	padding-bottom: 10px;
+}
+
+ul.recentPosts li a{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+ul.recentPosts li span{
+	display: block;
+	text-indent: 10px;
+	text-transform: none;
+}
+/*----------------------------
+			Recent comments
+----------------------------*/
+ul.recentComments li{
+	padding-bottom: 10px;
+	text-transform: none;
+}
+ul.recentComments li a.postTitle
+{
+	font-size:12px;
+	font-weight: bold;
+}
+ul.recentComments li a.moreLink{
+	font-size:10px;
+}
+
+/*----------------------------
+		Main Vertical Nav
+----------------------------*/
+div#mainnavigation{
+	font-size: 12px;
+}
+div#mainnavigation ul li{
+	font-weight:bold;
+}
+
