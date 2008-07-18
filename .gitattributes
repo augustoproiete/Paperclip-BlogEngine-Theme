@@ -1,0 +1,15 @@
+# Lineendings
+*.master     eol=crlf
+*.ascx       eol=crlf
+*.cs         eol=crlf
+*.css        eol=crlf
+
+# Whitespace rules
+# strict (no trailing, no tabs)
+*.master     whitespace=trailing-space,space-before-tab,tab-in-indent,cr-at-eol
+*.ascx       whitespace=trailing-space,space-before-tab,tab-in-indent,cr-at-eol
+*.cs         whitespace=trailing-space,space-before-tab,tab-in-indent,cr-at-eol
+*.css        whitespace=trailing-space,space-before-tab,tab-in-indent,cr-at-eol
+
+# normal (no trailing)
+*.md         whitespace=trailing-space,space-before-tab,cr-at-eol
