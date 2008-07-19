@@ -94,7 +94,7 @@
         </div>
         <div class="footer">
             Powered by <a href="http://www.dotnetblogengine.net" target="_blank">BlogEngine.NET</a> <%=BlogSettings.Instance.Version() %> | 
-            Original Design by <a href="http://www.telligent.com">Telligent</a>, Adapted by <a href="http://www.caioproiete.com" rel="me">Caio Proiete</a>
+            Original Design by <a href="https://www.telligent.com">Telligent</a>, Adapted by <a href="https://augustoproiete.net" rel="friend">C. Augusto Proiete</a>
         </div>
     </form>
 </body>
